@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-500 flex justify-center items-center min-h-screen">
+    <div class="bg-white p-6 rounded shadow-md w-full max-w-md">
+        <div class="flex items-center gap-2 mb-4">
+            <input id="itemInput" type="text" placeholder="Create something..." class="border border-gray-300 rounded px-3 py-2 w-full focus:outline-none focus:ring focus:ring-green-300"/>
+            <button id="addButton" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Create</button>
+        </div>
+        <div class="flex gap-2 mb-4">
+            <button data-filter="all" class="bg-gray-200 px-4 py-2 rounded">All (0)</button>
+            <button data-filter="completed" class="bg-gray-200 px-4 py-2 rounded">Completed (0)</button>
+            <button data-filter="uncompleted" class="bg-gray-200 px-4 py-2 rounded">UnCompleted (0)</button>
+        </div>
+        
+        <ul id="itemList" class="space-y-2">
+        
+        </ul>
+    </div>
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
